@@ -1,54 +1,39 @@
-# React + TypeScript + Vite
+# GSynergy Data Viewer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based application for managing stores, SKUs, and planning data. It includes features like:
 
-Currently, two official plugins are available:
+- Store Management
+- SKU Management
+- Planning Grid
+- Chart Visualization (for Superadmin users)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the development server using `npm run dev`.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Login Credentials
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Admin User**
+  - Username: `admin@gsynergy`
+  - Password: `Admin@123`
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Superadmin User**
+  - Username: `superadmin@gsynergy`
+  - Password: `Superadmin@123`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Stores Page**: Manage store information.
+- **SKUs Page**: Manage SKU information.
+- **Planning Page**: View and edit planning data.
+- **Chart Page**: View sales and GM data (Superadmin only).
+
+## Technologies Used
+
+- React
+- Redux Toolkit
+- Tailwind CSS
+- AG-Grid
+- Recharts
