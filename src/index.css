@@ -1,0 +1,15 @@
+@import "tailwindcss";
+.ag-theme-alpine {
+    --ag-border-color: #e5e7eb;
+    --ag-header-background-color: #f3f4f6;
+    --ag-odd-row-background-color: #f9fafb;
+  }
+  
+  .ag-header-group-cell {
+    font-weight: 600 !important;
+  }
+  
+  .cell-changed {
+    background-color: #e8f5e9 !important;
+    transition: background-color 0.5s ease;
+  }
